@@ -15,6 +15,8 @@ public class Main {
                 dinasPertanahan[index].getLuasTanah(index);
             }catch (ArrayIndexOutOfBoundsException e) {
                 System.err.println(e);
+            }finally {
+                System.out.println("Data Sudah Tersimpan");
             }
     }
 }
