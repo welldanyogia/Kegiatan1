@@ -5,7 +5,7 @@ public class Main {
         for (int index = 0; index <= dinasPertanahan.length; index++){
             try {
                 dinasPertanahan[index]=new DinasPertanahan();
-                System.out.printf("DATA KE-%d\n",index+1);
+                System.out.printf("\n\nDATA KE-%d\n",index+1);
                 dinasPertanahan[index].setAlamat();
                 dinasPertanahan[index].setPanjangTanah();
                 dinasPertanahan[index].setLuasTanah();
