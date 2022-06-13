@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 //        int index=0;
-        DinasPertanahan dinasPertanahan[]= new DinasPertanahan[2];
+        DinasPertanahan[] dinasPertanahan = new DinasPertanahan[1];
         for (int index = 0; index <= dinasPertanahan.length; index++){
             try {
                 dinasPertanahan[index]=new DinasPertanahan();
@@ -15,8 +15,6 @@ public class Main {
                 dinasPertanahan[index].getLuasTanah(index);
             }catch (ArrayIndexOutOfBoundsException e) {
                 System.err.println(e);
-            }finally {
-                System.out.println("Data Sudah Tersimpan");
             }
     }
 }
