@@ -1,8 +1,12 @@
+import java.util.InputMismatchException;
+import java.lang.ArrayIndexOutOfBoundsException;
+
 public class Main {
-    public static void main(String[] args) {
-//        int index=0;
-        DinasPertanahan[] dinasPertanahan = new DinasPertanahan[1];
-        for (int index = 0; index <= dinasPertanahan.length; index++){
+    public static void main(String[] args){
+        int index=0;
+        DinasPertanahan[] dinasPertanahan = new DinasPertanahan[index];
+
+        for (index = 0;; index++) {
             try {
                 dinasPertanahan[index]=new DinasPertanahan();
                 System.out.printf("\n\nDATA KE-%d\n",index+1);
@@ -13,9 +17,9 @@ public class Main {
                 dinasPertanahan[index].getAlamat(index);
                 dinasPertanahan[index].getPanjangTanah(index);
                 dinasPertanahan[index].getLuasTanah(index);
-            }catch (ArrayIndexOutOfBoundsException e) {
+            }catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
                 System.err.println(e);
             }
-    }
+        }
 }
 }
